@@ -1,6 +1,7 @@
 from random import *
-joe = random()
-if joe == 1:
-    print("hello this is joe 1")
+hello = random()
+if hello == 1:
+    print("no,u dont get a hello")
 else:
-    print("hello this is joe 2 ( real one , 1st doesnt exist )")
+    print("hello i will try to give you the longest greeting i can possibly give , hello and good morning/afternoon/evening)")
+###  this is made on purpose so it will always greet you :D
