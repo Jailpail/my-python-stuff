@@ -1,13 +1,64 @@
 import random
 class Human:
     def __init__(self, name="Human", job=None, home=None, car=None):
-        self.name = name
+        self.name = input("give me a name: ")
         self.money = 100
         self.gladness = 50
         self.satiety = 50
         self.job = job
         self.car = car
         self.home = home
+        self.skill = 100
+        ### NAME CHEAT CODES AHEAD ###
+        if self.name == "k9oc":
+             self.gladness = 5000
+             self.satiety = 9000
+             self.money = 500000000
+             print("The elderly ones have awakaned.")
+        if self.name == "Jailpail":
+             self.gladness = 50000
+             self.satiety = 900000
+             self.money = 5000000000
+             print("you have been chosed by the awakened ones")
+        if self.name == "fatshrek":
+             self.gladness = 0
+             self.satiety = 100
+             self.money = 10000
+        if self.name == "nugget":
+             self.gladness = 1000
+             self.satiety = 1000
+             self.money = 1000000
+             print("hee hee haw")
+        if self.name == "Bohdan":
+             self.gladness = 1000000000
+             self.satiety = 1000000000
+             self.money = 100000000000
+        if self.name == "nerd":
+            print("""\
+             ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⣞⠉⠉⠀⠀⠀⠀⠀⠀⠀⠈⠉⢑⣶⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⣾⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⣿⣿⣿⣿⣿⣶⣤⣀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⣤⣴⣤⣤⣤⣤⣤⣤⣤⣤⣤⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣥⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣽⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣄
+⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋
+⠀⠀⠀⢹⣿⣿⣿⠛⠛⠛⠛⠛⠛⠛⢛⣛⣻⣟⣛⠛⠛⠛⠛⠛⠛⠛⢻⣿⣿⣿⣿⡟⠛⠛⠛⠛⠛⠛⠛⢛⣛⣿⣛⣛⠛⠛⠛⠛⠛⠛⠛⠛⣿⣿⣿⡏⠀⠀
+⠀⠀⠀⢘⣿⣿⣿⡀⠀⣠⠋⠉⣣⠾⣿⣿⣿⣿⣿⡟⠢⡀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⠀⠀⠀⢠⠊⡩⢿⣿⣿⡀⠀⠀⠙⢦⡀⠀⠂⠀⠀⢸⣿⣿⣿⠀⠀⠀
+⠀⠀⠀⠀⢿⣿⣿⡇⠀⣇⠀⢰⣹⢁⣿⣿⣿⣿⣿⣿⣀⢹⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣇⠀⠀⣇⡼⠁⣸⣿⣿⣷⣥⣀⠀⠀⢱⠀⠀⠀⠀⣾⣿⣿⡇⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⣿⣷⠀⠈⠒⢺⣧⣼⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⡀⠀⠈⣷⣿⣿⣿⣿⣿⣿⣿⣆⠀⢸⠀⠀⠀⢀⣿⣿⣿⠆⠀⠀⠀
+⠀⠀⠀⠀⠈⣿⣿⣿⣔⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠙⣿⣿⣿⣿⣿⣿⣿⣿⣧⠏⠀⠀⠀⣼⣿⣿⡿⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢹⣿⣿⣿⣦⡠⠀⠀⠛⢿⣿⣿⣿⣿⡿⠋⠀⠀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠁⠘⢿⣿⣿⣿⣿⣿⠟⠁⠀⠀⢀⣼⣿⣿⡿⠃⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣶⣤⣤⣤⣬⣽⣽⣁⣠⣦⣴⣾⣿⣿⣿⣿⣏⢉⣭⣽⣿⣿⣿⣿⣿⣶⣤⣤⣈⣩⣭⣭⣥⣤⣤⣴⣾⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡏⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣼⡏⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⠇⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢇⠀⠀⠀⣭⡙⠛⠛⠛⠛⠛⠛⠛⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠛⠛⠛⠛⢛⣟⠛⠉⠁⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠙⠁⠀⠀⠀⠸⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⠀⠀⡸⠿⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢧⠀⠀⠀⣤⡀⠀⠀⠀⠈⠀⠀⠀⢀⣴⣦⣤⠤⠤⠤⠤⠤⠤⠤⢤⣤⣶⣤⡀⠀⠀⠘⠋⠀⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⢇⠀⠐⠙⠃⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⡧⠀⠀⠀⠀⠀⠀⢠⡄⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣇⠀⠀⠀⠀⠀⠀⠀⠀⣼⠋⠉⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠋⠳⠶⠶⠶⠖⠒⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡜⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠔⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠲⢤⣠⣀⣀⡀⠀⠀⣀⣠⡀⠀⡀⢀⡀⢀⣀⣦⣤⡾⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣾⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡖⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠻⠿⠿⠿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠛⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀""" )
     def get_home(self):
         self.home = House()
     def get_car(self):
@@ -89,6 +140,7 @@ class Human:
         print(f"Money – {self.money}")
         print(f"Satiety – {self.satiety}")
         print(f"Gladness – {self.gladness}")
+        print(f"INSANE PRO GAMER SKILL - {self.skill} ")  # this was supposed to be only shown if the job is gamer but it broke so yes.
         home_indexes = "Home indexes"
         print(f"{home_indexes:^50}", "\n")
         print(f"Food – {self.home.food}")
@@ -213,6 +265,10 @@ job_list = {
  {"salary":45, "gladness_less": 25 },
  "Rust developer":
  {"salary":70, "gladness_less": 1 },
+ "Professional gamer":
+ {"salary":700, "gladness_less": 1 },
+ "fake k9oc":
+ {"salary":9999990, "gladness_less": 1 },
  }
 brands_of_car = {
  "BMW":{"fuel":100, "strength":100,
@@ -223,6 +279,8 @@ brands_of_car = {
  "consumption": 8},
  "Ferrari":{"fuel":80, "strength":120,
  "consumption": 14},
+ "WhatsApp car": {"fuel": 8000, "strength": 50000,
+ "consumption": 0},
  }
 
 class Job:
@@ -230,7 +288,15 @@ class Job:
         self.job = random.choice(list(job_list))
         self.salary = job_list[self.job]["salary"]
         self.gladness_less = job_list[self.job]["gladness_less"]
-nick = Human(name="Nick")
+class ProGamer():
+    def __init__(self,job_list):
+        if self.job == "Professional gamer":
+            gainskill = random.randint(10,100)
+            self.skill + gainskill
+            print(" i have clearly improved at my gaming job")
+nick = Human()
+
+
 for day in range(1,8):
     if nick.live(day) == False:
         break
