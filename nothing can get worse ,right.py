@@ -26,9 +26,9 @@ class theonepiece(ahyes, ahyes1, ahyes2, ahyes3, ahyes4 ,ahyesfinal):
 
     def theonepieceisreal(self):
       self.divideonepiece = ","
-      print(self.the,self.one,self.piece,self.divideonepiece,self.the,self.one,self.piece , self.iss,self.real,self.canwegetmuchhigher)
+      for i in "CAN WE GET MUCH HIGHER SO HIGH OH OH OH":
+        print(self.the,self.one,self.piece,self.divideonepiece,self.the,self.one,self.piece , self.iss,self.real,self.canwegetmuchhigher)
 realpiece = theonepiece()
 realpiece.theonepieceisreal()
-
 
 ### this is a reference to the me of one piece and Dark Fantasy by Kanye West.
